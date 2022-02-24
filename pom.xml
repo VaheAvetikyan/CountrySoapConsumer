@@ -66,11 +66,11 @@
                 <configuration>
                     <schemaLanguage>WSDL</schemaLanguage>
                     <generatePackage>com.xyz.countrysoapconsumer.wsdl</generatePackage>
-                    <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
-                    <schemaDirectory>../CountrySoapConsumer/src/main/resources/wsdl</schemaDirectory>
-                    <schemaIncludes>
-                        <include>*.wsdl</include>
-                    </schemaIncludes>
+                    <schemas>
+                        <schema>
+                            <url>http://localhost:8080/ws/countries.wsdl</url>
+                        </schema>
+                    </schemas>
                 </configuration>
             </plugin>
         </plugins>
